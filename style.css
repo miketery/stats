@@ -1,0 +1,130 @@
+html {
+   width: 960px;
+   margin-right: auto;
+   margin-left: auto;
+   padding-right: 10px;
+   padding-left: 10px;
+   }
+body {
+   margin: 0px;
+   }
+th {
+   padding-right: 5px;
+   }
+#header {
+   padding-bottom: 15px;
+   }
+#header h2{
+   padding: 10px;
+   margin: 0px;
+   }
+#display_stats table, #standings table {
+   border-collapse: collapse;
+   border: 2px solid black;
+   }
+#display_stats table td, #standings table td {
+   padding: 4px;
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+   }
+#display_stats table tr:nth-child(odd), #standings table tr:nth-child(odd) {
+   background: #CCC;
+   }
+#display_stats table tr:not(:first-child):hover, #standings #table tr:not(:first-child):hover {
+   background: #5599BB;
+   }
+.reset, .pick_sport, .pick_player {
+   display: inline-block;
+   background: #4AF;
+   padding: 5px;
+   margin: 4px;
+   }
+.reset, .pick_sport:hover, .pick_player:hover {
+   background: #6CF;
+   cursor: pointer;
+   }
+.reset {
+   background: #888;
+   }
+.pick_sport+.clicked, .pick_player+.clicked {
+   background: #F6A828;
+   }
+.pick_sport+.clicked:hover, .pick_player+.clicked:hover {
+   /*background: #4D4;*/
+   cursor: pointer;
+   }
+.uplayer {
+   display: inline-block;
+   padding: 5px;
+   margin: 4px;
+   margin-right: 8px;
+   margin-left: 0px;
+   background: #66CCFF;
+   }
+.uplayer:hover {
+   background: #3399FF;   
+   cursor: pointer;
+   }
+.adding {
+   display: inline;
+   color: white;
+   font-weight: bold;
+   background: #006688;
+   padding: 5px;
+   size: 15px;
+   margin: 4px;
+   }
+.standings {
+   background: #EE0000;
+   }
+.standings:hover, .adding:hover {
+   background: #F6A828;
+   color: black;
+   cursor: pointer;
+   }
+.emphasis {
+   font-weight: bold;
+   size: 14px;
+   color: #00C;
+   }
+#header a {
+   text-decoration:none;
+}
+#standings table td {
+   padding-right: 7px;
+   }
+.clicked {
+   background: #00CC99;
+   }
+.clicked:hover {
+   background: #00FFAA;
+   }
+#standings table tr.clicked {
+   background: #00CC99;
+   }
+#standings table tr:hover {
+   background: #55EE99;
+   cursor: pointer; 
+   }
+#standings table {
+   float: left;
+   }
+#standings canvas {
+   float: right;
+   }
+tr.redhigh td:first-child {
+   color: red;
+   }
+.notice {
+   padding: 3px 30px;
+   border: 3px solid black;
+   background: #AAA;
+}
+.success {
+   border-color: green;
+   background: #CFC;
+}
+.error {
+   border-color: red;
+   background: #FDD;
+}
